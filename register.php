@@ -92,8 +92,8 @@
     
     // if there's no error, continue to signup
     if( !$error ) {
-      $query = "INSERT INTO users(first_name, last_name, user_email, user_pass) 
-                VALUES('$name', '$last_name', '$user_email','$password')";
+      $query = "INSERT INTO users(first_name, last_name, user_email, user_pass, gender , birthdate) 
+                VALUES('$name', '$last_name', '$user_email','$password','$gender','$birthdate')";
 
       $res = mysqli_query($conn, $query);
       
